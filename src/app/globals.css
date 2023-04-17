@@ -13,3 +13,11 @@
   --background: black;
   --foreground: white;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}

@@ -4,11 +4,14 @@ import DarkModeSwitch from "./DarkModeSwitch";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import MenuItem from "./MenuItem";
+// import { Tooltip } from "@nextui-org/react";
 const Header = () => {
 	return (
 		<div className="flex justify-between mx-2 p-2 max-w-6xl sm:mx-auto items-center">
 			<div className="">
+				{/* <Tooltip content={"Home page"}> */}
 				<MenuItem title={"Home"} address={"/"} Icon={AiFillHome} />
+				{/* </Tooltip> */}
 				<MenuItem
 					title={"About"}
 					address={"/about"}
