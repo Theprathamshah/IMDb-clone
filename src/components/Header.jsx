@@ -7,7 +7,7 @@ import MenuItem from "./MenuItem";
 // import { Tooltip } from "@nextui-org/react";
 const Header = () => {
 	return (
-		<div className="flex justify-between mx-2 p-2 max-w-6xl sm:mx-auto items-center">
+		<div className="flex justify-between mx-2 p-2 max-w-6xl sm:mx-auto items-center select-none">
 			<div className="">
 				{/* <Tooltip content={"Home page"}> */}
 				<MenuItem title={"Home"} address={"/"} Icon={AiFillHome} />

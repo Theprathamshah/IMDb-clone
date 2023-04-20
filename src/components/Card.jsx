@@ -5,7 +5,7 @@ import React from "react";
 
 const Card = ({ result }) => {
 	return (
-		<div className=" cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md  rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200 group">
+		<div className=" cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md  rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200 group pb-6">
 			<Link href={`/movie/${result.id}`}>
 				<Image
 					src={`https://image.tmdb.org/t/p/original/${
@@ -23,12 +23,12 @@ const Card = ({ result }) => {
 					alt="Image is not available"
 				></Image>
 				<div className=" p-2">
-					<p className=" line-clamp-2 text-md">{result.overview}</p>
 					<h2 className=" truncate text-lg font-bold ">
 						{result.title || result.name}
 					</h2>
+					<p className=" line-clamp-2 text-md">{result.overview}</p>
 					<p>{result.release_date || result.first_air_date}</p>
-					<p className="flex items-center">
+					<p className="flex items-center  ">
 						<FiThumbsUp className=" inline-block mr-2" />{" "}
 						{result.vote_count}
 					</p>
